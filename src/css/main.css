@@ -1,5 +1,19 @@
 body {
     background:linear-gradient(to right, #ff0000, #000000);
-   color: #ffffff;
+   background:radial-gradient(#000000, #ff0000);
+    color: #ffffff;
 }
     
+h2 {
+    color:#000000;
+}
+
+.title { background-color:#000000;
+}
+
+
+#title {
+    background:linear-gradient(to right, #000000, #ff0000);
+    color:rgb(255, 0, 0);
+}
+
