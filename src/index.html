@@ -8,14 +8,18 @@
 </head>
 <body>
     <h1 id="title" class="title"> Hello Mr. Stubblefield</h1>
-    <h2>Corvettes look better in dark colors</h2>
-    <input type="text" placeholder="Enter your name"></input><br>
-
-    <textarea placeholder="Enter your message"></textarea><br>
+    <h1>Corvettes look better in dark colors</h1>
+    <input type="text" placeholder="Enter your name" name="name"></input><br>
+    <textarea placeholder="Enter your message" name="message"></textarea><br>
     <button type="submit" onclick="submit()">send</button>
     <script>
         function submit() {
             console.log("Hello World");
+            var name = document.getElementsByName("name").item(0).value;
+            var message = document.getElementsByName("message").item(0).value;
+            console.log(name);
+            console.log(message);
+            alert("Hello " + name + " your message is " + message + "")
         }
     </script>
 </body>
