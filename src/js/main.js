@@ -9,9 +9,17 @@ function submit() {
 }
 
 function createNav() {
-    var nav = '<a href="/">Home</a>';
-    nav += '|<a href="/newpage/">My New Page</a>';
-    nav += '|<a href="/more/">More Pages</a>';
+    var anchors = [
+        new anchor("Home", "/"),
+        new anchor("My New Page", "/newpage/"),
+        new anchor("More Pages", "/more/"),
+        new anchor("Google", "https://www.google.com")
+    ];
+    var nav="";
+    for (var i = 0; i < anchors.length; i++) {
+        if (i > 0) {nav += "|";}
+        nav += anchors[i].toHTML();
+    }
     document.getElementById("topnav").innerHTML = nav;
 }
 
