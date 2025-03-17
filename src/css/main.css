@@ -25,3 +25,10 @@ a:hover{
     background-color: #000000;
     color: #ff0000
 }
+
+.littleImage {
+    margin: 5px 10px 0px 0px;
+    width: 160px;
+    height: 64px;
+    border-radius: 3px;
+}
